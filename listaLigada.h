@@ -5,8 +5,10 @@
 class ListaLigada{
     private:
         Nodo *cabeza;
-        unsigned int size;
+        Nodo *cola;
+
     public:
+        unsigned int size;
         ListaLigada();
         ~ListaLigada();
         void add(const Producto &dato);

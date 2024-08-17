@@ -7,9 +7,9 @@ class Nodo {
         Producto dato;
     public: 
         Nodo(const Producto &producto);
-        const Producto &getdato() const;
-        void setdato(const Producto &dato);
-        Nodo* getsiguiente() const;
-        void setsiguiente(Nodo* siguiente);
+        const Producto &getDato() const;
+        void setDato(const Producto &dato);
+        Nodo* getSiguiente() const;
+        void setSiguiente(Nodo* siguiente);
 };
 #endif

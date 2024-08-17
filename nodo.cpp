@@ -5,15 +5,15 @@ Nodo::Nodo(const Producto& data) : dato(data){
 }
 // Setters & Getters 
 
-const Producto &Nodo::getdato() const {
+const Producto &Nodo::getDato() const {
     return dato;
 }
-void Nodo::setdato(const Producto &dato) {
+void Nodo::setDato(const Producto &dato) {
     Nodo::dato = dato;
 }
-Nodo* Nodo::getsiguiente() const {
+Nodo* Nodo::getSiguiente() const {
     return siguiente;
 }
-void Nodo::setsiguiente(Nodo *siguiente) {
+void Nodo::setSiguiente(Nodo *siguiente) {
     Nodo::siguiente = siguiente;
 }
