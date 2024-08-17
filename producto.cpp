@@ -1,10 +1,6 @@
 #include "producto.h"
 #include <iostream>
 
-Producto::Producto()
-{
-}
-
 Producto::Producto(const string &nombre, unsigned int codigo, unsigned int stock, unsigned int precio)
 {
     this-> nombre = nombre;
@@ -19,7 +15,6 @@ Producto::Producto(const string &nombre, unsigned int codigo, unsigned int stock
             nombreComparable += aux;
         }
     }
-    cout << nombreComparable;
 }
 
 

@@ -17,9 +17,10 @@ int main(){
     ListaLigada listica;
     Generador generador;
     if(cargarGenerador(generador)){
-        listica.add(Producto(generador.obtenerAlteatorio(), generador.generarInt(1000000, 9000000), 5, 5));
-        listica.add(Producto(generador.obtenerAlteatorio(), generador.generarInt(1000000, 9000000), 5, 5));
-        listica.add(Producto(generador.obtenerAlteatorio(), generador.generarInt(1000000, 9000000), 5, 5));
+        for(unsigned int cont = 0; cont < 250000; cont++){
+            listica.add(Producto(generador.obtenerAlteatorio(), generador.generarInt(1000000, 9000000), 5, 5));
+            cout << cont << endl;
+        }
     }
     else{
         cout << "No se pudieron cargar los archivos necesarios para ejecutar el programa, lo sentimos.";

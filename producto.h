@@ -23,7 +23,6 @@ class Producto{
 
 
     public:
-        Producto();
         Producto(const string &nombre, unsigned int codigo, unsigned int stock, unsigned int precio);
         bool esMayor(unsigned short criterio, const Producto &producto1, const Producto &producto2);
         bool esIgual(unsigned short criterio, const Producto &producto1, const Producto &producto2);
