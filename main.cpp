@@ -14,11 +14,12 @@ bool cargarGenerador(Generador &generador){
 }
 
 int main(){
-    std::chrono::year_month_day hola;
     ListaLigada listica;
     Generador generador;
     if(cargarGenerador(generador)){
-        cout << generador.obtenerAlteatorio();
+        listica.add(Producto(generador.obtenerAlteatorio(), generador.generarInt(1000000, 9000000), 5, 5));
+        listica.add(Producto(generador.obtenerAlteatorio(), generador.generarInt(1000000, 9000000), 5, 5));
+        listica.add(Producto(generador.obtenerAlteatorio(), generador.generarInt(1000000, 9000000), 5, 5));
     }
     else{
         cout << "No se pudieron cargar los archivos necesarios para ejecutar el programa, lo sentimos.";

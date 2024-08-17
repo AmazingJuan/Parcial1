@@ -1,7 +1,7 @@
 #include "nodo.h"
 // Constructor de la clase nodo 
-Nodo::Nodo(const Producto &data) {
-    this-> dato = dato;
+Nodo::Nodo(const Producto& data){
+    this -> dato = data;
     this-> siguiente = nullptr;
 }
 // Setters & Getters 
