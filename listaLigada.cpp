@@ -24,3 +24,27 @@ void ListaLigada::add(const Producto &dato){
     size += 1;
 }
 
+unsigned int ListaLigada::getSize() const
+{
+    return size;
+}
+
+Nodo *ListaLigada::getCabeza() const
+{
+    return cabeza;
+}
+
+void ListaLigada::setCabeza(Nodo *cabeza)
+{
+    this->cabeza = cabeza;
+}
+
+void ListaLigada::imprimir() const
+{
+    Nodo *aux = cabeza;
+    while(aux -> getSiguiente() != nullptr){
+        Producto producAux = aux -> getDato();
+        std::cout << producAux;
+        aux = aux -> getSiguiente();
+    }
+}

@@ -1,16 +1,23 @@
 #ifndef LISTALIGADA_H
 #define LISTALIGADA_H
 #include "nodo.h"
+#include <iostream>
+
 
 class ListaLigada{
     private:
         Nodo *cabeza;
         Nodo *cola;
-
-    public:
         unsigned int size;
+    public:
         ListaLigada();
         ~ListaLigada();
         void add(const Producto &dato);
+        unsigned int getSize() const;
+        Nodo* getCabeza() const;
+        void setCabeza(Nodo *cabeza);
+        void imprimir() const;
+        
+
 };
 #endif //LISTALIGADA_H

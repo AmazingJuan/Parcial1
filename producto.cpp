@@ -17,19 +17,75 @@ Producto::Producto(const string &nombre, unsigned int codigo, unsigned int stock
     }
 }
 
-
-bool mayorStock(const Producto &producto1, const Producto &producto2)
+string Producto::getNombre() const
 {
-    return producto1.stock > producto2.stock;
+    return nombre;
 }
 
-bool menorStock(const Producto &producto1, const Producto &producto2)
+unsigned int Producto::getCodigo() const
 {
-    return producto1.stock < producto2.stock;
+    return codigo;
 }
 
-bool igualStock(const Producto &producto1, const Producto &producto2)
+unsigned int Producto::getStock() const
 {
-    return producto1.stock == producto2.stock;
+    return stock;
 }
 
+unsigned int Producto::getPrecio() const
+{
+    return precio;
+}
+
+bool esMayor(unsigned short criterio, const Producto &producto1, const Producto &producto2)
+{
+    switch(criterio){
+        case 1: //nombre
+            return producto1.nombreComparable > producto2.nombreComparable;
+        case 2: // stock
+            return producto1.stock > producto2.stock;
+        case 3: // Codigo
+            return producto1.codigo > producto2.codigo;
+        case 4:
+            return false;
+        default:
+            return false;
+    }
+}
+
+bool esMenor(unsigned short criterio, const Producto &producto1, const Producto &producto2)
+{
+    switch(criterio){
+        case 1: //nombre
+            return producto1.nombreComparable < producto2.nombreComparable;
+        case 2: // stock
+            return producto1.stock < producto2.stock;
+        case 3: // Codigo
+            return producto1.codigo < producto2.codigo;
+        case 4:
+            return false;
+        default:
+            return false;
+    }
+}
+
+bool esIgual(unsigned short criterio, const Producto &producto1, const Producto &producto2)
+{
+    switch(criterio){
+        case 1: //nombre
+            return producto1.nombreComparable == producto2.nombreComparable;
+        case 2:
+            return producto1.stock == producto2.stock;
+        case 3:
+            return false;
+        default:
+            return false;
+    }
+}
+
+std::ostream &operator<<(std::ostream &os, const Producto &producto)
+{
+    os << "Nombre: " << producto.getNombre() << '\n' << "Codigo: " << producto.getCodigo() \
+    << '\n' << "Stock: " << producto.getStock() << '\n';
+    return os;
+}
