@@ -6,7 +6,17 @@ ListaLigada::ListaLigada(){
     size = 0;
 }
 ListaLigada::~ListaLigada(){
-    
+    Nodo *aux = cabeza;
+    Nodo *temp;
+    while(aux -> getSiguiente() != nullptr){
+        temp = aux ->getSiguiente();
+        delete aux;
+        aux = temp;
+    }
+    cola = nullptr;
+    cabeza = nullptr;
+    size = 0;
+    delete aux;
 }
 
 void ListaLigada::add(const Producto &dato){
@@ -34,15 +44,25 @@ Nodo *ListaLigada::getCabeza() const
     return cabeza;
 }
 
+Nodo *ListaLigada::getCola() const
+{
+    return cola;
+}
+
 void ListaLigada::setCabeza(Nodo *cabeza)
 {
     this->cabeza = cabeza;
 }
 
+void ListaLigada::setCola(Nodo *cola)
+{
+    this -> cola = cola;
+}
+
 void ListaLigada::imprimir() const
 {
     Nodo *aux = cabeza;
-    while(aux -> getSiguiente() != nullptr){
+    while(aux != nullptr){
         Producto producAux = aux -> getDato();
         std::cout << producAux;
         aux = aux -> getSiguiente();

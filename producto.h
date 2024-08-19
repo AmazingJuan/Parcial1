@@ -1,17 +1,16 @@
 #ifndef PRODUCTO_H
 #define PRODUCTO_H
-#include <string>
-#include <chrono>
-using namespace std;
+#include "importaciones.h"
 
 class Producto{
     private:
         string nombre;
+        string fechaAbastecimiento;
         string nombreComparable;
         unsigned int codigo, stock, precio;
 
     public:
-        Producto(const string &nombre, unsigned int codigo, unsigned int stock, unsigned int precio);
+        Producto(const string &nombre, unsigned int codigo, unsigned int stock, unsigned int precio, const string &fecha);
 
         string getNombre() const;
         unsigned int getCodigo() const;

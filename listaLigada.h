@@ -15,9 +15,9 @@ class ListaLigada{
         void add(const Producto &dato);
         unsigned int getSize() const;
         Nodo* getCabeza() const;
+        Nodo* getCola() const;
         void setCabeza(Nodo *cabeza);
+        void setCola(Nodo *cola);
         void imprimir() const;
-        
-
 };
 #endif //LISTALIGADA_H
