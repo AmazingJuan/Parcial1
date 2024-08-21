@@ -24,7 +24,7 @@ brew install gcc
 ##### En Windows
 Debe descargar e instalar MinGW desde el siguiente [link](https://www.mingw-w64.org/downloads/)
 
-###### Para instalar git consulte este [link](https://git-scm.com/downloads).
+##### Para instalar git consulte este [link](https://git-scm.com/downloads).
 
 ### Ejecución 🔧
 
