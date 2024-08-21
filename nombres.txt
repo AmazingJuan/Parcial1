@@ -22,7 +22,7 @@ Te Verde
 Cerveza Artesanal
 Yogurt Natural
 Helado Cremoso
-Café Descafeinado
+Cafe Descafeinado
 Sopa Instantanea
 Cereal Integral
 Mermelada Dulce
@@ -30,7 +30,7 @@ Crema Suave
 Manteca Vegetal
 Atun en Agua
 Galletas de Avena
-Café Clásico
+Cafe Clasico
 Arroz Integral
 Leche Descremada
 Queso Fundido
@@ -52,7 +52,7 @@ Te de Manzanilla
 Cerveza Lager
 Yogurt Griego
 Helado de Vainilla
-Café Espresso
+Cafe Espresso
 Sopa de Pollo
 Cereal de Avena
 Mermelada de Fresa
@@ -60,7 +60,7 @@ Crema Chantilly
 Manteca de Cerdo
 Atun en Aceite
 Galletas de Chocolate
-Café Molido
+Cafe Molido
 Arroz Blanco
 Leche de Soya
 Queso Rallado
@@ -82,7 +82,7 @@ Te de Hierbabuena
 Cerveza Pilsner
 Yogurt Deslactosado
 Helado de Chocolate
-Café Filtro
+Cafe Filtro
 Sopa de Verduras
 Cereal de Maiz
 Mermelada de Durazno
@@ -90,8 +90,8 @@ Crema Batida
 Manteca Ghee
 Atun con Vegetales
 Galletas de Jengibre
-Café en Grano
-Arroz Jazmín
+Cafe en Grano
+Arroz Jazmin
 Leche de Almendras
 Queso Azul
 Mantequilla de Mani
@@ -112,7 +112,7 @@ Te Negro
 Cerveza Stout
 Yogurt con Probióticos
 Helado de Fresa
-Café Colombiano
+Cafe Colombiano
 Sopa de Mariscos
 Cereal con Miel
 Mermelada de Mora

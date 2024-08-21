@@ -3,6 +3,7 @@
 Nodo::Nodo(const Producto& data) : dato(data){
     this-> siguiente = nullptr;
 }
+
 // Setters & Getters 
 
 const Producto &Nodo::getDato() const {

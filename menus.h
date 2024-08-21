@@ -2,4 +2,4 @@
 #include "utilidades.h"
 #include "validacion.h"
 
-int menuOpcion(string mensaje, string opciones[7], int lenOpcion);
+int menuOpcion(string mensaje, string (&opciones)[8], int lenOpcion);

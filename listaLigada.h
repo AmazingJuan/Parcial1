@@ -18,6 +18,6 @@ class ListaLigada{
         Nodo* getCola() const;
         void setCabeza(Nodo *cabeza);
         void setCola(Nodo *cola);
-        void imprimir() const;
+        void imprimir(unsigned int elementosImprimir) const;
 };
 #endif //LISTALIGADA_H

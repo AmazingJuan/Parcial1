@@ -1,5 +1,6 @@
 #ifndef IMPORTACIONES_H
 #define IMPORTACIONES_H
+//SE INCLUYEN BIBLIOTECAS UTILES PARA LA IMPLEMENTACION DEL CODIGO.
 #include <string>
 #include <chrono>
 #include <thread>
