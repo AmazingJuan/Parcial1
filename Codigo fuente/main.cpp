@@ -19,21 +19,19 @@
 #define stockMaximo 900
 #define stockMinimo 0
 
-
 bool cargarGenerador(Generador &generador){
     return generador.leerArchivo(productos); //FUNCIÓN QUE PERMITE CARGAR EL NOMBRE DE LOS ARCHIVOS
 }
 
-
 //ACONDICIONAMIENTO DEL CODIGO MOSTRADO EN CLASE PARA MEDIR TIEMPO
 template <typename Func, typename... Args> 
 double medirTiempo(Func funcionOrdenamiento, Args&&... args) { //SE INCLUYE LOS ARGUMENTOS DE LA FUNCION DE ORDENAMIENTO YA QUE ERAN 2 EN VEZ DE 1
-    auto inicio = std::chrono::high_resolution_clock::now(); //TOMA EL TIEMPO ANTES DE EJECUTAR LA FUNCION DE ORDENAMIENTO
+    auto inicio = chrono::high_resolution_clock::now(); //TOMA EL TIEMPO ANTES DE EJECUTAR LA FUNCION DE ORDENAMIENTO
     
-    funcionOrdenamiento(std::forward<Args>(args)...); //SE INVOCA LA FUNCION DE ORDENAMIENTO
+    funcionOrdenamiento(forward<Args>(args)...); //SE INVOCA LA FUNCION DE ORDENAMIENTO
     
-    auto fin = std::chrono::high_resolution_clock::now(); //TOMA EL TIEMPO DESPUES DE EJECUTAR LA FUNCION DE ORDENAMIENTO
-    std::chrono::duration<double> duracion = fin - inicio; //CALCULA EL LAPSO DE TIEMPO ENTRE EL FIN Y EL INICIO.
+    auto fin = chrono::high_resolution_clock::now(); //TOMA EL TIEMPO DESPUES DE EJECUTAR LA FUNCION DE ORDENAMIENTO
+    chrono::duration<double> duracion = fin - inicio; //CALCULA EL LAPSO DE TIEMPO ENTRE EL FIN Y EL INICIO.
     return duracion.count();
 }
 
